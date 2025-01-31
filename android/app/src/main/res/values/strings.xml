@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fire_alert_names">
+        <item>Fire alert</item>
+        <item>Fire</item>
+        <item>Report Fire</item>
+    </string-array>
+
+    <string-array name="harassment_names">
+        <item>Report harassment</item>
+        <item>Harassment</item>
+        <item>Harassed</item>
+        <item>Harassment Alert</item>
+        <item>Send harassment Alert</item>
+
+    </string-array>
+
+
+
+
+    <!-- Short labels for shortcuts -->
+    <string name="fire_alert_short">Fire alert</string>
+    <string name="harassment_alert_short">Harassment alert</string>
+
+</resources>

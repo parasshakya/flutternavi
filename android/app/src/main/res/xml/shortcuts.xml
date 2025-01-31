@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <capability android:name="actions.intent.OPEN_APP_FEATURE">
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:targetPackage="com.paras.flutternavi"
+        android:targetClass="com.paras.flutternavi.MainActivity">
+      <parameter
+          android:name="feature"
+          android:key="featureParam" />
+    </intent>
+
+  </capability>
+
+  <!-- Inline inventory for OPEN_APP_FEATURE. -->
+
+  <shortcut android:shortcutId="FIRE_ALERT" android:shortcutShortLabel="@string/fire_alert_short">
+    <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+      <parameter-binding
+          android:key="feature"
+          android:value="@array/fire_alert_names" />
+    </capability-binding>
+  </shortcut>
+
+  <shortcut android:shortcutId="HARASSMENT_ALERT" android:shortcutShortLabel="@string/harassment_alert_short">
+    <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+      <parameter-binding
+          android:key="feature"
+          android:value="@array/harassment_names" />
+    </capability-binding>
+  </shortcut>
+
+
+</shortcuts>
